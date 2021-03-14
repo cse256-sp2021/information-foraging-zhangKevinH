@@ -27,9 +27,9 @@
                     </p>
                     <span id="mturk-top-banner-inner-span">
                         <span class="mturk-top-banner-button mturk-top-banner-back-wh" id="mturk-top-banner-arrow">
-                            <i class="fa fa-chevron-down none" id="mturk-top-banner-drop-down-button">
+                            <i class="fa fa-chevron-down none" id="mturk-top-banner-drop-down-button" onclick="moveDwn()">
                             </i>
-                            <i class="fa fa-chevron-up display" id="mturk-top-banner-collapse-button">
+                            <i class="fa fa-chevron-up display" id="mturk-top-banner-collapse-button" onclick="moveUp()">
                             </i>
                         </span>
                     </span>
@@ -78,6 +78,17 @@
         <iframe id="attachment-viewer" src="" frameborder="0"></iframe>
     </div>
     <script id="256-script-bundle" src="scripts/js/app.js">
+    </script>
+    <script>
+        function moveUp() {
+            document.getElementById("auto_gen_id_unq_21").style.marginTop="0px";
+            return;
+        }
+        function moveDwn() {
+            document.getElementById("auto_gen_id_unq_21").style.marginTop="250px";
+            return;
+        }
+        
     </script>
 </body>
 
